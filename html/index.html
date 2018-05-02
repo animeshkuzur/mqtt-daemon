@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>DELTA</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-auto">
+				<h4>Room 1</h4>  
+			</div>
+			<div class="col-auto">
+				<span class="badge badge-pill badge-success">Online</span>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				Temperature
+				<h3><i class="fas fa-fire" style="color:orange;"></i> <span id="temp"> 35</span> °C</h3>
+			</div>
+			<div class="col">
+				Humidity
+				<h3><i class="fas fa-tint" style="color:blue;"></i> <span id="humid"> 15</span> %</h3>
+			</div>
+			<div class="col">
+				Light
+				<h3><i class="fas fa-lightbulb" style="color:yellow"></i></i> <span id="light"> 75</span> %</h3>
+			</div>
+		</div>
+	</div>
+	<hr width="90%">
+	<div class="container">
+			<div class="d-flex justify-content-between">
+				<div class="p-2">
+					<h2><i class="fas fa-plug"></i> Switch 1</h2>	
+				</div>
+				<div class="p-2">
+					<label class="switch">
+					  <input type="checkbox">
+					  <span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-between" >
+				<div class="p-2">
+					<h2><i class="fas fa-snowflake"></i> AC</h2>	
+				</div>
+				<div class="p-2">
+					<label class="switch">
+					  <input type="checkbox">
+					  <span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-between" >
+				<div class="p-2">
+					<h2><i class="fas fa-lightbulb"></i> Bulb</h2>	
+				</div>
+				<div class="p-2">
+					<label class="switch">
+					  <input type="checkbox">
+					  <span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+		
+	</div>
+	<nav class="navbar fixed-bottom navbar-light bg-faded">
+  		<a class="navbar-brand" href="#">Fixed bottom</a>
+	</nav>
+	<style type="text/css">
+		 /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+	</style>
+</body>
+</html>
